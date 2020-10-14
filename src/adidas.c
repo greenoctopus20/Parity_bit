@@ -5,33 +5,28 @@
 #include "process.h"
 
 
-#define BYTE_TO_BINARY_PATTERN "%c%c%c%c%c%c%c%c"
-#define BYTE_TO_BINARY(byte)  \
-  (byte & 0x80 ? '1' : '0'), \
-  (byte & 0x40 ? '1' : '0'), \
-  (byte & 0x20 ? '1' : '0'), \
-  (byte & 0x10 ? '1' : '0'), \
-  (byte & 0x08 ? '1' : '0'), \
-  (byte & 0x04 ? '1' : '0'), \
-  (byte & 0x02 ? '1' : '0'), \
-  (byte & 0x01 ? '1' : '0') 
+
 
 
 
 
 
 int main(int argc, char** argv) {
-    uint8_t input = 0x41;
-    uint8_t lsb , msb;
-    
-    lsb = input  & 0x0F;
-    msb = ((input >> 4) & 0x0F);
-    
-    
-    printf("\n RESULT : "BYTE_TO_BINARY_PATTERN, BYTE_TO_BINARY(check_parity(lsb)));
-    printf("\n RESULT : "BYTE_TO_BINARY_PATTERN, BYTE_TO_BINARY(check_parity(msb)));
-    
-
+    if (argc < 2){
+      if(strcmp(argv[1],"-e") == 0)
+      {
+        printf("\n**** Decoding ******\n");
+        read_byte_to_encode(argc, argv);
+      } 
+      if(strcmp(argv[1],"-d") == 0)
+      {
+        printf("\n**** Channeling ******\n");
+        read_byte_to_decode(argc, argv);
+      } 
+    }
+    uint8_t lsb = 0x13; 
+    uint8_t msb = 0x13; 
+    decode(lsb, msb, argv);
     return 0;
 }
 
