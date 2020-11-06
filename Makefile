@@ -1,5 +1,5 @@
 #give PN the name of your c file wihich contains main
-PN= adidas
+PN= main
 
 CFLAGS=-Wall  -Isrc 
 
