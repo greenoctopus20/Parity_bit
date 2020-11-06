@@ -1,14 +1,13 @@
-Youssef Belganche
-3203379
+
+
 
 # Parity_bit
 
 to run the program 
-	-e  fileinput fileoutput (Working)
-	-d  fileinput fileoutput (Working)
-	-c  fileinput fileoutput (Not working)
+	-e (encode)  fileinput fileoutput (Working)
+	-d (decode)  fileinput fileoutput (Working)
+	-c (channel) fileinput fileoutput (Not working)
 
 
-Note: I had a problem as a change was the last thing I implemented when I added noise decode doesn't work I have to fix read and write functions
-
-
+- [x] basic functionality with minimum flexibility
+- [ ] Update readme with explanation 
