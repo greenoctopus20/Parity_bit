@@ -6,11 +6,11 @@
 To run the program ./main
 	```
 	
--e (encode)  fileinput fileoutput (Working)
+-e (encode)  fileinput fileoutput 
 	
--d (decode)  fileinput fileoutput (Working)
+-d (decode)  fileinput fileoutput 
 	
--c (channel) fileinput fileoutput (Not working)
+-c (channel) fileinput fileoutput 
 	```
 to build : 
 ```
