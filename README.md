@@ -5,13 +5,16 @@
 
 To run the program ./main
 	```
-	-e (encode)  fileinput fileoutput (Working)
-	-d (decode)  fileinput fileoutput (Working)
-	-c (channel) fileinput fileoutput (Not working)
+	
+-e (encode)  fileinput fileoutput (Working)
+	
+-d (decode)  fileinput fileoutput (Working)
+	
+-c (channel) fileinput fileoutput (Not working)
 	```
 to build : 
 ```
-	make clean && make
+make clean && make
 ```
 
 Done / To do
