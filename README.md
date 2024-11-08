@@ -16,5 +16,3 @@ to build :
 make clean && make
 ```
 
-Done / To do
-- [x] basic functionality with minimum flexibility
