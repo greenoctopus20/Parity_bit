@@ -18,4 +18,3 @@ make clean && make
 
 Done / To do
 - [x] basic functionality with minimum flexibility
-- [ ] Update readme with explanation 
